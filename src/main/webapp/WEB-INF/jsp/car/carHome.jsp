@@ -1,4 +1,4 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="c" uri="jakarta.tags.core" %>
 <html>
 <title>Car Home</title>
 <body>
@@ -20,8 +20,8 @@
     <legend>debug</legend>
 
     <ul>
-        <li>javax.servlet.forward.servlet_path: ${requestScope['javax.servlet.forward.servlet_path']}</li>
-        <li>javax.servlet.forward.request_uri:  ${requestScope['javax.servlet.forward.request_uri']}</li>
+        <li>jakarta.servlet.forward.servlet_path: ${requestScope['jakarta.servlet.forward.servlet_path']}</li>
+        <li>jakarta.servlet.forward.request_uri:  ${requestScope['jakarta.servlet.forward.request_uri']}</li>
         <li>pageContext.request.servletPath:  ${pageContext.request.servletPath}</li>
     </ul>
 

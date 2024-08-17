@@ -2,8 +2,8 @@ package com.sankholin.core.model;
 
 import java.math.BigDecimal;
 
-import javax.validation.constraints.Max;
-import javax.validation.constraints.Min;
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
 
 import org.hibernate.validator.constraints.NotEmpty;
 

@@ -1,12 +1,12 @@
-# Purpose
-Explore Spring web MVC with different view technology stack including RESTful web service.
+# vanilla-two
+
+Explore Spring Framework [Web MVC](https://docs.spring.io/spring-framework/reference/web/webmvc.html) with different [view technologies](https://docs.spring.io/spring-framework/reference/web/webmvc-view.html) including RESTful web service.
 
 ## Template Engines
 
 * JSP/JSTL
-* Tiles/JSPX/JSTL
+* JSPX/JSTL
 * FreeMarker
-* Velocity
 * XSLT
 * Thymeleaf
 
@@ -26,6 +26,20 @@ Explore Spring web MVC with different view technology stack including RESTful we
 
 * Jackson JSON
 
-## Demo
+## Docker
 
-* http://cloud.sankholin.com/vanilla-two
+```
+docker build -t vanilla-two -f Dockerfile .
+```
+
+```
+docker run -it --rm -p 8080:8080 --name vanilla-two vanilla-two
+```
+
+```
+open -a "Google Chrome" http://localhost:8080/vanilla-two
+```
+
+```
+curl -s -H "Accept: application/json" "http://localhost:8080/vanilla-two/space1/rest/getCars" | jq
+```

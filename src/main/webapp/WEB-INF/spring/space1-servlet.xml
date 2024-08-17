@@ -9,24 +9,12 @@
 
     <context:component-scan base-package="com.sankholin.web"/>
 
-    <bean id="velocityConfig" class="org.springframework.web.servlet.view.velocity.VelocityConfigurer">
-        <property name="resourceLoaderPath" value="/"/>
-    </bean>
-
-    <bean id="velocityViewResolver" class="org.springframework.web.servlet.view.velocity.VelocityLayoutViewResolver">
-        <property name="order" value="1"/>
-        <property name="cache" value="true"/>
-        <property name="prefix" value="/WEB-INF/vm/views/"/>
-        <property name="suffix" value=".vm"/>
-        <property name="layoutUrl" value="/WEB-INF/vm/layout/page.vm"/>
-    </bean>
-
     <bean id="freemarkerConfig" class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
         <property name="templateLoaderPath" value=""/>
     </bean>
 
     <bean id="freeMarkerViewResolver" class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
-        <property name="order" value="2"/>
+        <property name="order" value="1"/>
         <property name="cache" value="true"/>
         <property name="prefix" value="/WEB-INF/ftl/views/"/>
         <property name="suffix" value=".ftl"/>
@@ -43,13 +31,14 @@
     -->
 <!--
     <bean class="org.springframework.web.servlet.view.xslt.XsltViewResolver">
-        <property name="order" value="3"/>
+        <property name="order" value="2"/>
         <property name="prefix" value="/WEB-INF/xsl/"/>
         <property name="suffix" value=".xsl"/>
     </bean>
 -->
 
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
         <property name="order" value="3"/>
         <property name="prefix" value="/WEB-INF/jsp/"/>
         <property name="suffix" value=".jsp"/>

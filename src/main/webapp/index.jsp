@@ -39,8 +39,8 @@
         <h1>Good day...</h1>
     </div>
 
-    <p class="lead">Welcome to Vanilla <a style="font-weight: bold" href="https://github.com/victorskl/vanilla/tree/master/vanilla-two">TWO</a></p>
-    <pre>git clone https://github.com/victorskl/vanilla.git</pre>
+    <p class="lead">Welcome to Vanilla <a style="font-weight: bold" href="https://github.com/victorskl/vanilla-two">TWO</a></p>
+    <pre>git clone https://github.com/victorskl/vanilla-two.git</pre>
     <iframe src="https://ghbtns.com/github-btn.html?user=victorskl&amp;type=follow" frameborder="0" scrolling="no" width="170px" height="20px"></iframe>
     <hr/>
 
@@ -61,7 +61,6 @@
         <li><a href="space1/car/add">car/add</a></li>
         <li><a href="space1/carfm">carfm</a></li>
         <li><a href="space1/fmlayout">fmlayout</a></li>
-        <li><a href="space1/carvelo">carvelo</a></li>
     </ul>
 
     <h2>space2</h2>

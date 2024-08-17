@@ -4,9 +4,9 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Set;
 
-import javax.validation.ConstraintViolation;
-import javax.validation.Valid;
-import javax.validation.Validator;
+import jakarta.validation.ConstraintViolation;
+import jakarta.validation.Valid;
+import jakarta.validation.Validator;
 import javax.xml.parsers.DocumentBuilderFactory;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -83,13 +83,6 @@ public class CarController {
 
         iCarService.add(car);
         return "redirect:/space1/car/list";
-    }
-
-    @RequestMapping(value = "/carvelo", method = RequestMethod.GET)
-    public String carvelo(Model model) {
-        List<Car> list = iCarService.findAll();
-        model.addAttribute("cars", list);
-        return "carvelo";
     }
 
     @RequestMapping(value = "/carfm", method = RequestMethod.GET)

@@ -1,0 +1,11 @@
+<jsp:root version="2.0" xmlns="http://www.w3.org/1999/xhtml"
+          xmlns:jsp="http://java.sun.com/JSP/Page"
+          xmlns:s="http://www.springframework.org/tags">
+
+    <s:url value="/resources/js" var="js"/>
+    <s:url value="/resources/bootstrap" var="bs"/>
+    <script type="text/javascript" src="${js}/jquery-1.11.3.min.js"><!----></script>
+    <script type="text/javascript" src="${js}/holder.min.js"><!----></script>
+    <script type="text/javascript" src="${bs}/js/bootstrap.min.js"><!----></script>
+
+</jsp:root>

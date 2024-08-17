@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 import java.util.LinkedList;
 import java.util.List;
 
-import javax.annotation.PostConstruct;
+import jakarta.annotation.PostConstruct;
 
 import org.springframework.stereotype.Repository;
 
